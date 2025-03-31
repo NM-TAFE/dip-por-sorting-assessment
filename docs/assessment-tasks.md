@@ -18,12 +18,14 @@ To succeed you must use a systematic, analytical processes in complex, non-routi
 > CRITICAL: Failure to follow these instructions will lead to an NYC
 
 - Copy this file into a `docs` folder in your assessment repo
-- Add and commit this file to your repository and associate the tag `por3-start` with this commit:
-  - `git add docs/project-overview.md`
-  - `git commit -m "chore: add task overview to my repo"`
+- Add and commit this file to your repository and associate the tag `por3-start` :
+  - Copy and `add` this file to your repository under the `docs` folder
+  - `git commit -m "chore: add task overview to my repo"
   - `git tag por3-start`
   - `git push origin main --tags`
-- Commit changes after you complete each task (you must perform at least 4 timely commits)
+  - Optional: you may want to complete this work in a branch
+  - On your last commit, add the tag `por3-finish`
+- Commit changes after you complete each task
 - Push changes to your GitHub repository
 - Ensure you submit your git repo (`.git/`) along with your assessment submission
 
@@ -244,12 +246,32 @@ Propose a fix to your sorting algorithm that fixes this issue.
 - [ ] Test case added to `test_player.py`
 - [ ] Test case passes only when changes above are added
 
-## 6. Submit your work
+## 6. Task: Authenticity of in class work
 
-- [ ] Ensure all tests pass
-- [ ] Include git with each task committed (you must show at least 5 commits)
+Complete the following snippet before you submit:
+
+```text
+I, <name and student number>, completed this work in class <room number>, on <date>, under the supervision of <assessor's name>.
+```
+
+Or (if not completed in class):
+
+```text
+I, <name and student number>, completed this work outside of the scheduled hours. I emailed <assessors name>, on <date>, along with my documented reason for non-attendance, and have scheduled a time to meet to discuss my work.
+
+I understand that until I meet my assessor to confirm that this work is a valid and true representation of my abilities to write and debug a sorting algorithm in Python, this submission cannot be considered complete.
+
+```
+
+## 7. Submit your work
+
+- [ ] Ensure all tasks are complete and tests pass
+- [ ] Answer all questions in your own words
+- [ ] Complete the statement of authenticity
+- [ ] Include `.git` showing each task committed (you must show at least 5 commits)
+- [ ] Tag your last commit as `por3-finish`
 - [ ] Push your changes to your GitHub repository
-- [ ] Submit a zip of your repository to the LMS (ensure you do not add `.venv` or `__pycache__` folders)
+- [ ] Submit a zip of your repository to the LMS (ensure you do not add the `.venv` or `__pycache__` folders)
 
 ---
 End of assessment task
