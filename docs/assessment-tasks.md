@@ -1,8 +1,8 @@
-# 1. Overview
+# Overview
 
 This assessment evaluates your ability to perform the following tasks in accordance with ICTPRG547 Apply advanced programming skills in another language:
 
-## 1.1. Performance elements
+## 1. Performance elements
 
 - 1.4 Code sorting algorithm using programming techniques
 - 3.2 Detect and resolve errors of syntactical, logical and design origin
@@ -13,33 +13,37 @@ You will demonstrate your performance by providing evidence that you can code at
 
 To succeed you must use a systematic, analytical processes in complex, non-routine situations, setting goals, gathering relevant information, and identifying, and evaluating, options against the agreed criteria
 
-## 1.2. General instructions
+## 2. General instructions
 
 > CRITICAL: Failure to follow these instructions will lead to an NYC
 
-- Fork this repository before you start work
-- Clone the repository to your local machine
-- Commit changes after you complete each task
+- Copy this file into a `docs` folder in your assessment repo
+- Add and commit this file to your repository and associate the tag `por3-start` with this commit:
+  - `git add docs/project-overview.md`
+  - `git commit -m "chore: add task overview to my repo"`
+  - `git tag por3-start`
+  - `git push origin main --tags`
+- Commit changes after you complete each task (you must perform at least 4 timely commits)
 - Push changes to your GitHub repository
-- Ensure you submit your git repo along with your assessment submission
+- Ensure you submit your git repo (`.git/`) along with your assessment submission
 
-## 1.3. Players have scores now
+## 3. Players have scores now
 
-### 1.3.1. Task: Add scores to players
+### 3.1. Task: Add scores to players
 
 Add a private instance variable to the Player class that will hold the score (a positive integer value).
 
 Provide a getter (property) and a setter method for this value.
 
-#### 1.3.1.1. Success criteria
+#### 3.1.1. Success criteria
 
 - [ ] Correct use of private instance variable
 - [ ] Use of properties to create a getter and setter
 - [ ] Raising ValueError if someone attempts to set a non-positive value
 
-## 1.4. Sorting players
+## 4. Sorting players
 
-### 1.4.1. Task: Add unit tests for sorting players
+### 4.1. Task: Add unit tests for sorting players
 
 Add the following unit tests to the `test_player.py` file:
 
@@ -60,7 +64,7 @@ def test_sort_players(self):
 
 > **Note:** f you have made other changes to the initializer of your player update the above code to reflect this change - you must not make any other changes to the test code above.
 
-### 1.4.2. Task: Interpret unit tests
+### 4.2. Task: Interpret unit tests
 
 What was the outcome of running the above unit test, copy paste the output **for just this particular test** below:
 
@@ -68,19 +72,19 @@ What was the outcome of running the above unit test, copy paste the output **for
 Your output here
 ```
 
-### 1.4.3. Success criteria
+### 4.3. Success criteria
 
 - [ ] Unit test added to `test_player.py`
 - [ ] Unit test output provided
 - [ ] Unit test output reflects the error in `sorted(players)` (if you are getting another error read the instructions CAREFULLY)
 
-#### 1.4.3.1. Question
+#### 4.3.1. Question
 
 The tests checks that calling sorted on a list of players will sort them by score, what is the **only** magic method that must be implemented in the player class for the `sorted` function to succeed?
 
 > Answer Here
 
-#### 1.4.3.2. Task: Implement the magic method in the Player class
+#### 4.3.2. Task: Implement the magic method in the Player class
 
 Add a test case to test_player to test the comparison operator you are about to add - ensure you do not test a dunder method directly!
 
@@ -102,7 +106,7 @@ INSERT ERROR OUTPUT HERE
 
 Implement the appropriate magic method in the Player class and ensure you pass this test (and only this test!).
 
-#### 1.4.3.3. Success criteria
+#### 4.3.3. Success criteria
 
 - [ ] Unit test added to `test_player.py`
 - [ ] Magic method implemented in `Player` class
@@ -110,7 +114,7 @@ Implement the appropriate magic method in the Player class and ensure you pass t
 - [ ] Unit test runs successfully with submited code
 - [ ] Dunder method not employed directly
 
-#### 1.4.3.4. Task: Are we sorted yet?
+#### 4.3.4. Task: Are we sorted yet?
 
 Rerun `test_sort_players` does the test pass? If not, include the output below:
 
@@ -124,13 +128,13 @@ Why did the test fail (note: if it doesn't fail, it means there is something you
 
 Add the necessary code to the Player class to ensure that the `test_sort_players` test passes.
 
-#### 1.4.3.5. Success criteria
+#### 4.3.5. Success criteria
 
 - [ ] Correct explanation of why `test_sort_players` failed/passed
 - [ ] Correct implementation of the magic method in the `Player` class
 - [ ] `test_sort_players` passes when run against the submitted code
 
-## 1.5. Implement a custom sorting algorithm
+## 5. Implement a custom sorting algorithm
 
 The senior developer on your team believes that a custom sorting algorithm would be more efficient than the built-in `sorted` function (you grit your teeth, sigh, and realize you need this job!). They have asked you to implement a custom sorting algorithm that will sort a list of players by score.
 
@@ -151,21 +155,21 @@ def sort_quickly(arr):
     return sort_quickly(left) + [pivot] + sort_quickly(right)
 ```
 
-### 1.5.1. Question: complexity
+### 5.1. Question: complexity
 
 What is the expected time and space complexity of the above algorithm? You can answer using big O or in plain English but in both cases you MUST justify your answer.
 
 > Answer here
 
-### 1.5.2. Task: Implement the custom sorting algorithm
+### 5.2. Task: Implement the custom sorting algorithm
 
-#### 1.5.2.1. Create a new method in the Player class
+#### 5.2.1. Create a new method in the Player class
 
 Use the sample above (and its algorithm) as a starting point to implement a `classmethod` in the Player class that takes a list of players and returns a list of players sorted by score in **descending** order. Top scores come first!
 
-#### 1.5.2.2. Create a test cases
+#### 5.2.2. Create a test cases
 
-Add a seperate test case to `test_player.py` to test your custom sorting algorithm
+Add a separate test case to `test_player.py` to test your custom sorting algorithm
 
 Include your code below:
 
@@ -173,14 +177,14 @@ Include your code below:
 # YOUR CUSTOM Sorting here
 ```
 
-#### 1.5.2.3. Success criteria
+#### 5.2.3. Success criteria
 
 - [ ] Custom sorting algorithm implemented in the `Player` class as `classmethod`
 - [ ] Custom sorting algorithm sorts in descending order
 - [ ] Custom sorting algorithm compares players using their score (via the rich comparison operators)
 - [ ] Custom sorting algorithm tested in `test_player.py` and tests passed
 
-### 1.5.3. Test your custom sorting algorithm at scale
+### 5.3. Test your custom sorting algorithm at scale
 
 The senior developer is impressed with your work and asks you to test your custom sorting algorithm with a list of 1000 players. They provide you with a script that will generate a list of 1000 players with random scores.
 
@@ -192,7 +196,7 @@ from player import Player
 players = [Player(f"Player {i}", uid=f"{i:03}", score=random.randint(0, 1000)) for i in range(1000)]
 ```
 
-#### 1.5.3.1. Task: Create a test case to sort 1000 players
+#### 5.3.1. Task: Create a test case to sort 1000 players
 
 Using the code above as a starting point, create a test case to test your custom sort algorithm - you can test it against the `sorted` function to ensure it is working correctly.
 
@@ -202,17 +206,17 @@ Include your test case below:
 
 ```
 
-#### 1.5.3.2. Success criteria
+#### 5.3.2. Success criteria
 
 - [ ] Test case added to `test_player.py`
 - [ ] Test case sorts 1000 players correctly when compared to `sorted` function
 - [ ] Test case passes when run against the submitted code
 
-#### 1.5.3.3. Task: Testing sorting sorted players
+#### 5.3.3. Task: Testing sorting sorted players
 
 You had a scary thought - and decided to test your custom sorting algorithm against a list of players that are already sorted by score. You are worried that your algorithm might not be efficient in this case.
 
-#### 1.5.3.4. Task: Create a test case to sort 1000 sorted players
+#### 5.3.4. Task: Create a test case to sort 1000 sorted players
 
 Create a test case that tries to sort 1000 players that are already sorted.
 
@@ -235,16 +239,17 @@ Propose a fix to your sorting algorithm that fixes this issue.
 # Highlight what the fix was
 ```
 
-#### 1.5.3.5. Success criteria
+#### 5.3.5. Success criteria
 
 - [ ] Test case added to `test_player.py`
 - [ ] Test case passes only when changes above are added
 
-## 1.6. Submit your work
+## 6. Submit your work
 
 - [ ] Ensure all tests pass
 - [ ] Include git with each task committed (you must show at least 5 commits)
 - [ ] Push your changes to your GitHub repository
 - [ ] Submit a zip of your repository to the LMS (ensure you do not add `.venv` or `__pycache__` folders)
 
->>> End of assessment <<<
+---
+End of assessment task
