@@ -113,7 +113,7 @@ Implement the appropriate magic method in the Player class and ensure you pass t
 - [ ] Unit test added to `test_player.py`
 - [ ] Magic method implemented in `Player` class
 - [ ] Initial Failed Unit test output provided
-- [ ] Unit test runs successfully with submited code
+- [ ] Unit test runs successfully with submitted code
 - [ ] Dunder method not employed directly
 
 #### 4.3.4. Task: Are we sorted yet?
