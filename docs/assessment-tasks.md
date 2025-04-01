@@ -58,7 +58,7 @@ def test_sort_players(self):
     sorted_players = sorted(players)
 
     # players must be sorted by score as shown here:
-    manually_sorted_players == [Player("Bob", uid='02', score=5), Player("Alice", uid='01', score=10), Player("Charlie", uid='03', score=15)]
+    manually_sorted_players = [Player("Bob", uid='02', score=5), Player("Alice", uid='01', score=10), Player("Charlie", uid='03', score=15)]
 
    self.assertListEqual(sorted_players, manually_sorted_players)
 
