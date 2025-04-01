@@ -64,7 +64,7 @@ def test_sort_players(self):
 
 ```
 
-> **Note:** f you have made other changes to the initializer of your player update the above code to reflect this change - you must not make any other changes to the test code above.
+> **Note:** If you have made other changes to the initializer of your player update the above code to reflect this change - you must not make any other changes to the test code above.
 
 ### 4.2. Task: Interpret unit tests
 
