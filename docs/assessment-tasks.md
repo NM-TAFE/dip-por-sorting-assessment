@@ -167,7 +167,7 @@ What is the expected time and space complexity of the above algorithm? You can a
 
 #### 5.2.1. Create a new method in the Player class
 
-Use the sample above (and its algorithm) as a starting point to implement a `staticmethod` in the Player class that takes a list of players and returns a list of players sorted by score in **descending** order. Top scores come first!
+Use the sample above (and its algorithm) as a starting point to implement a `classmethod` in the Player class that takes a list of players and returns a list of players sorted by score in **descending** order. Top scores come first!
 
 #### 5.2.2. Create a test cases
 
