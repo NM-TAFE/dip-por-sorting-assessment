@@ -2,16 +2,16 @@
 
 This assessment evaluates your ability to perform the following tasks in accordance with ICTPRG547 Apply advanced programming skills in another language:
 
-## 1. Performance elements
+ - Performance elements:
 
-- 1.4 Code sorting algorithm using programming techniques
-- 3.2 Detect and resolve errors of syntactical, logical and design origin
-- 3.3 Design and document required tests
-- 4.1 Develop and document solution according to debugging test results
+  - 1.4 Code sorting algorithm using programming techniques
+  - 3.2 Detect and resolve errors of syntactical, logical and design origin
+  - 3.3 Design and document required tests
+  - 4.1 Develop and document solution according to debugging test results
 
-You will demonstrate your performance by providing evidence that you can code at least one sorting algorithm, and test and debug the code to resolve errors of a syntactical, logical, or design origin.
+You will demonstrate your performance by providing evidence that you can "code at least one sorting algorithm", and "test and debug the code to resolve errors of a syntactical, logical, or design origin".
 
-To succeed you must use a systematic, analytical processes in complex, non-routine situations, setting goals, gathering relevant information, and identifying, and evaluating, options against the agreed criteria
+To succeed you must use a "systematic, analytical processes in complex, non-routine situations, setting goals, gathering relevant information, and identifying, and evaluating, options against the agreed criteria".
 
 ## 2. General instructions
 
